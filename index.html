@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beachtabelle &#x2012; Tus Bersenbrück</title>    
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <button class="header-menu-button" id="header-menu-button">
+                <img id="header-menu-img" src="assets/menu-button-img.svg" alt="Menüknopf">
+            </button>
+            <h1 class="header-title"></h1>
+            <button class="header-menu-button" id="header-login-button">
+                <img id="header-login-img" src="assets/login-button-img.svg" alt="Anmeldeknopf">
+            </button>
+        </header>
+        <div class="content">
+            <main>
+                <table>
+                    <tr>
+                        <div id="table-info" class="table-info">1. Herren, Saison 2021</div>
+                    </tr>
+                    <tr class="table-headers">
+                        <th></th>
+                        <th class="th-name">Name</th>
+                        <th class="th-wins">S</th>
+                        <th class="th-losses">N</th>
+                        <th class="th-sets">Sätze</th>
+                    </tr> 
+                    <tr>
+                        <td class="td-rank">&#x1F947;</td>
+                        <td class="td-name">John Klein</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8:3</td>
+                    </tr>
+                    <tr>
+                        <td class="td-rank">&#x1F948;</td>
+                        <td class="td-name">Kasibek Zumataev</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5:3</td>
+                     </tr>
+                     <tr>
+                        <td class="td-rank">&#x1F949;</td>
+                        <td class="td-name">Doktor Wort</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3:3</td>
+                     </tr>
+                     <tr>
+                        <td class="td-rank">4</td>
+                        <td class="td-name">Erik Frolov</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3:3</td>
+                     </tr>
+                     <tr>
+                        <td class="td-rank">5</td>
+                        <td class="td-name">Markus MzW</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3:3</td>
+                     </tr>
+                </table>
+            </main>
+            <button class="add-result-button">
+                <img src="assets\add-button-img.svg" alt="Ergebnis hinzufügen Knopf">
+             </button>
+
+            <!-- foldable side elements -->
+            <aside class="sidebar-menu" id="sidebar-menu">
+                <ul>
+                    <li class="li-monthly">
+                        <button id="monthly-checkbox">
+                            <div><div id="monthly-checkbox-mark"></div></div> monatlich
+                        </button>
+                    </li>
+                    <li><button>Saison</button></li>
+                    <li><button>Verein</button></li>
+                    <li><button>1. Herren</button></li>
+                    <li><button>2. Herren</button></li>
+                    <li><button>Jugend</button></li>
+                </ul>
+            </aside>
+            <aside class="sidebar-login" id="sidebar-login">
+                <div>
+                    <h2>Anmelden/<br>Registrieren</h2>
+                    <form>
+                        <div>
+                            <label for="login-name">Name:</label>
+                            <input class="sidebar-item" type="text" id="login-name" 
+                                   name="login-name" maxlength="20">
+                        </div>
+                        <div>
+                            <label for="login-password">Passwort:</label>
+                            <input class="sidebar-item" type="text" 
+                                   id="login-password" name="login-password">
+                        </div>
+                        <div>
+                            <input class="sidebar-item login-submit" id="login-submit" 
+                                   type="submit" value="Bestätigen">
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <p>&#xA9;John Klein</p>
+            <a href="http://xn--tus-bersenbrck-rsb.de/index.php/impressum" target="_blank">Impressum</a>
+        </footer>
+    </body>
+</html>
